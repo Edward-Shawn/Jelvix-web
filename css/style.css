@@ -1,0 +1,6 @@
+*{margin: 0; padding: 0;}
+header{position: fixed; width: 100%; height: 100px; background:none; transition: all 0.5s;}
+.main_page{width: 100%; height: 100vh; background: skyblue;}
+.info_page{width: 100%; height: 300px; background: slategrey;}
+.header_txt{text-align: center; padding-top: 20px;}
+.header_txt p{font-size: 40px;}
