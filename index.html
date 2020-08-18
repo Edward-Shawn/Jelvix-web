@@ -5,32 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/animate.css">
     <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500&display=swap');
+    </style>
 </head>
 <body>
     <header>
-      <div class="header_txt">
-        <p>display</p>
+      <div class="header_container">
+          <div class="header-top">
+              <strong class="logo">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="30" viewBox="0 0 100 30">
+                      <defs><path id="w436a" d="M38.029 26h2.192v22.216c0 1.432-.48 2.637-1.423 3.58-.997 1.01-2.225 1.523-3.647 1.523-1.421 0-2.649-.51-3.647-1.515C30.506 50.8 30 49.676 30 48.464v-.275l2.175-.562v.457c0 .877.286 1.588.876 2.172.59.586 1.277.87 2.1.87.824 0 1.514-.284 2.11-.87.527-.527.785-1.184.785-2.007 0-.075-.005-.156-.015-.24zm24.112 22.426l2.244.802-.276.382c-.297.41-.637.808-1.01 1.181-1.83 1.83-4.072 2.758-6.664 2.758-2.58 0-4.817-.928-6.647-2.758s-2.758-4.072-2.758-6.664c0-2.581.928-4.817 2.758-6.647s4.067-2.758 6.647-2.758c2.216 0 4.182.675 5.844 2.006.272.228.547.479.82.752.104.104.202.207.294.31l.223.25-11.641 11.642c1.264 1.047 2.763 1.577 4.46 1.577 1.96 0 3.656-.703 5.043-2.09.178-.178.348-.363.505-.553zm-12.82-4.299c0 1.474.394 2.797 1.173 3.941l9.882-9.882c-1.143-.78-2.467-1.173-3.94-1.173-1.95 0-3.64.7-5.027 2.08-1.386 1.38-2.088 3.074-2.088 5.034zM70.903 26h2.191v27.088h-2.19zm31.258 8.036l2.007-4.388h2.283l-2.099 4.389zm0 2.154h2.191v16.898h-2.191zm21.865 16.898h-2.532l-4.021-6.951-4.02 6.95h-2.55l5.351-9.24-4.427-7.657h2.534l3.111 5.367 3.096-5.367h2.551l-4.426 7.657zM87.463 54l-8.508-17.81h2.501l6.007 12.996 3.978-8.608h2.43z"></path>
+                      </defs><g><g transform="translate(-30 -26)"><use fill="#fff" xlink:href="#w436a"></use></g></g></svg>
+                  </a>
+              </strong>
+              <!-- <button class="burger-btn"></button> -->
+          </div>
+          <div class="nav_drop">
+              <nav class="nav">
+                  <ul class="nav_list">
+                    <li>
+                      <a class="anchor" href="">HOW IT WORKS</a>
+                    </li>
+                    <li>
+                      <a class="anchor" href="">BENEFITS</a>
+                    </li>
+                    <li>
+                      <a class="anchor" href="">CASE STUDIES</a>
+                    </li>
+                    <li>
+                      <a class="anchor-btn" href="">CONTACT US</a>
+                    </li>
+                  </ul>
+              </nav>
+          </div>
       </div>
     </header>
 
-    <section>
-      <div class="main_page">
+    <main>
+      <div class="banner-block">
+          <div class="container">
 
+              <div class="banner-content wow fadeInUp" id="banner-content" data-wow-duration=".45s" data-wow-delay=".75s" style="visibility: visible; animation-duration: 0.45s; animation-delay: 0.75s; animation-name: fadeInUp;">
+                  <h1 class="h1">We Build&nbsp;
+                    <br>
+                    Dedicated Development Teams For Any Business Objectives, For Any Project Stages</h1>
+                  <a class="btn-primary" href="">GET IN TOUCH</a>
+              </div>
+          </div>
+          <div class="video-holder" style="background-image: url(img/banner-image-1.jpg);">
+              <video loop muted="ture" autoplay class="video">
+                  <source src="video/video_DDT.webm" type="video/webm">
+                  <source src="video/video_DDT.mp4" type="video/webm">
+              </video>
+          </div>
       </div>
-      <div class="info_page">
 
-      </div>
-    </section>
+      <section class="section highlight-section">
+          <div class="container">
+
+              <div class="row justify align wow fadeInUp" data-wow-duration=".45s" data-wow-delay=".75s" style="visibility: visible; animation-duration: 0.45s; animation-delay: 0.75s; animation-name: fadeInUp;">
+                
+                  <div class="col col-md-6 col-lg-5">
+                    <h2 class="mb-0">Set Up Your Own Development&nbsp;<br class="ultracustombreak">Team</h2>
+                  </div>
+                  <div class="col col-md-6 pl-0">
+                    <div class="text-holder">
+                      <p>It is time to stop recruiting and start development, scale your team, and tap into the new expertise with ease. We can assemble a dedicated team of developers in days and fully integrate the new members into your in-house team.
+                      </p>
+                    </div>
+                  </div>
+
+              </div>
+
+          </div>
+      </section>
+    </main>
 
     <footer>
 
     </footer>
   
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="js/custom.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   
 </body>
 </html>

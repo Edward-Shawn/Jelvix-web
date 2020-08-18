@@ -1,6 +1,54 @@
 *{margin: 0; padding: 0;}
-header{position: fixed; width: 100%; height: 100px; background:none; transition: all 0.5s;}
-.main_page{width: 100%; height: 100vh; background: skyblue;}
-.info_page{width: 100%; height: 300px; background: slategrey;}
-.header_txt{text-align: center; padding-top: 20px;}
-.header_txt p{font-size: 40px;}
+a{text-decoration: none;}
+
+.clear::after{display: block; content: ''; clear: both;}
+.container{padding: 0 19px;  width: 100%; max-width: 1480px;}
+
+header{z-index: 999; position: fixed; width: 100%; height: auto; transition: all 0.5s; box-sizing: border-box; padding: 30px 70px;}
+.header_container{display: flex; align-items: center; justify-content: space-between; margin: 0 auto; max-width: 1750px; widows: 100%; height: auto;}
+header .header-top{padding-left: 22px; display: flex; justify-content: space-between; align-items: center; position: relative;}
+
+.nav_drop{top: 0; left: 0; right: 0; height: auto; align-items: center; transform: 0; display: block;  box-sizing: border-box;}
+.nav{display: block;}
+.nav_list{margin-bottom:0; text-align: center;}
+.nav_list li{display: inline-block; vertical-align: middle; padding:0 20px;}
+.nav_list li a{display: block; position: relative; color: black; font-weight: 600; color: #fff; padding: 16px 0;}
+.nav_list li .anchor-btn{display: inline-block; background: #fff; color: #000; min-width: 170px; vertical-align: top;}
+
+.banner-block{min-height: 100vh; background: #161616; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
+display: flex; align-items: center; position: relative; overflow: hidden; padding: 120px 0 50px; color: #fff;}
+.banner-block::before{content: ''; position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: 2; background: hsla(0, 0%, 9%, .65);}
+
+.banner-block .container{position: relative; z-index: 3; padding: 0 40px; margin: 0 auto; width: 100%; max-width: 1480px;}
+.banner-block .banner-content{max-width: 60%; position: relative;}
+
+
+
+.banner-block .banner-content h1{font-size: 48px; font-weight: 700; margin-bottom: 1.5em; line-height: 1.193;}
+.banner-block .banner-content a{background: #3f60fa; line-height: 50px; height: 50px; min-width: 240px; display: inline-block; vertical-align: top;
+text-align: center; font-weight: 600; position: relative; overflow: hidden;
+}
+
+
+
+
+
+.banner-block .video-holder{position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;}
+.banner-block .video{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; height: auto; min-width: 100%; min-height: 50%; object-fit: cover;}
+
+.section{padding: 105px 0;}
+
+.section.highlight-section{background: #3f60fa; color: #fff; line-height: 1.572; padding-bottom: 110px;}
+
+.section.highlight-section .col-lg-5{width: 41.6667%;}
+.col{padding: 0; flex-shrink: 0; }
+.ultracustombreak{display: none;}
+.section.highlight-section .row{display: flex; align-items: center; justify-content: space-between;}
+
+
+
+.section.highlight-section .col-md-6.pl-0{width: 47%;}
+
+.section.highlight-section .text-holder{padding-right: 10%;}
+.section.highlight-section .text-holder p{font-family: 'Exo 2', sans-serif; font-size: 15px; font-weight: 400;}
+.section.highlight-section h2{font-size: 48px; color: #fff; font-weight: 700; line-height: 1.46;}
