@@ -2,6 +2,7 @@
 a{text-decoration: none;}
 li{list-style: none;}
 
+
 .clear::after{display: block; content: ''; clear: both;}
 .container{padding: 0 19px;  width: 100%; max-width: 1480px;}
 
@@ -64,16 +65,40 @@ text-align: center; font-weight: 600; position: relative; overflow: hidden;
 .prime-section .image-holder{position: absolute; top: -185px; bottom: -160px; right: 19px; left: 0; max-height: none; margin: 0;}
 .prime-section .bg{background: #252525; position: absolute; overflow: hidden; top: 0; bottom: 0; right: 0; left: 0;}
 
-.section-heading{position: relative; z-index: 3; padding-top: 2px; margin-bottom: 55px; padding-right: 10%;}
+.section-heading{position: relative; z-index: 3; padding-top: 2px; margin-bottom: 55px; padding-right: 21%;}
 .section-heading h2{font-weight: 700; font-size: 44px; line-height: 1.46; margin-bottom:0.3335em;}
 .section-heading h2 .decorate{position: relative; vertical-align: top; display: inline-block;}
 .section-heading h2 .decorate::before{content: ""; position: absolute; top: -52px; right: -50px;}
 
 .client-block{position: relative; padding-right:16px; width: 100%;}
 .client-block:before{content: ''; position: absolute; left: calc(100% - 20px); background: #fff;  top: -50px;  bottom: -100px; right: -120px;}
-
 .client-list{display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin: 0 -15px -40px; text-align: center; position: relative;}
-
 .client-list li{margin-bottom: 55px; width: 25%; padding: 0 15px; flex-shrink: 0;}
-
 .client-list img{max-width: 100%; vertical-align: top; vertical-align: middle; display: inline-block;}
+
+
+.col-md-12{width: 100%;}
+.step-list{position: relative; display: flex; font-size: 16px; padding: 0; margin-bottom: 30px; list-style: none;}
+.step-list::before{transform: scaleX(0); content: ''; z-index: 3; position: absolute; bottom: 0; transition: transform 0.6s linear; top: auto; left: 0; right: 0; width: 100%; height: 2px; transform-origin: left center; background: #252525;}
+.in-viewport.animated .step-list:before{transform: scaleX(1);}
+
+.step-list li{position: relative; flex: 1 0 auto; padding-left: 50px; margin-bottom: 0; padding-bottom: 20px; padding-right: 15px; min-width: 25%;}
+.step-list li::before{content: '';  position: absolute; width: 15px;  height: 0; top: 100%; left: 0; background: #252525; transition: height 0.2s linear .6s;}
+.in-viewport.animated .step-list li::before{height: 15px;}
+
+.step-list li::after{content: '';  transform: scaleY(0); position: absolute;  width: 15px; top: 0; bottom: 0; left: 0; background: #dbdbdb; transform-origin: bottom center; transition: transform .4s linear .9s;}
+.in-viewport.animated .step-list li::after{transform: scaleY(1);}
+
+
+.step-list .number{font-size: 48px; display: inline-block; vertical-align: top; font-weight: 700; line-height: 1; position: relative;}
+.step-list .number .value{display: inline-block; vertical-align: top; overflow: hidden;}
+
+.step-list .number .value .text{display: block; transform: translateX(-110%); transition: transform 0.2s linear 1.7s;}
+.in-viewport.animated .value .text{transform: translateX(0);}
+
+.step-list .content>*{ transform: translateX(-110%);}
+.in-viewport.animated .step-list .content>*{transform: translateX(0);  transition: transform 0.3s linear 1.6s;}
+
+
+
+.step-list .content{color: #555; font-weight: 500; overflow: hidden;}
