@@ -22,7 +22,7 @@ display: flex; align-items: center; position: relative; overflow: hidden; paddin
 .banner-block::before{content: ''; position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: 2; background: hsla(0, 0%, 9%, .65);}
 
 .banner-block .container{position: relative; z-index: 3; padding: 0 40px; margin: 0 auto; width: 100%; max-width: 1480px;}
-.banner-block .banner-content{max-width: 60%; position: relative;}
+.banner-block .banner-content{opacity: 0; max-width: 60%; position: relative;}
 
 
 
