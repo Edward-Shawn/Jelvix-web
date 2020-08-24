@@ -110,3 +110,13 @@ text-align: center; font-weight: 600; position: relative; overflow: hidden;
 .icons-block,
 .text-holder{overflow: hidden;}
 .icons-block .title{display: block; font-weight: 500;}
+
+
+.highlight{margin-bottom: -15px; position: relative;}
+.highlight::before{content: ''; position: absolute; top: -2px; bottom: 50%; left: -999px; right: -999px; background: #252525; z-index: -3;}
+.highlight-block{margin: 0; padding: 60px 50px; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; text-align: center; color: #fff;}
+.highlight-block h3{font-size: 28px; font-weight: 700; margin-bottom: 0.8em;}
+
+.highlight-block .btn{overflow: hidden; font-weight: 600; border-radius: 0; height: 50px; line-height: 50px; min-width: 240px; color: #252525; background: #fff; position: relative; padding: 0 1em; vertical-align: top; transition: line-height 0.25s linear;}
+.highlight-block .btn::after{content: attr(data-hover); color: inherit; position: absolute; top: -40px; left: 50%; white-space: nowrap; transform: translateX(-50%);}
+.highlight-block .btn:hover{line-height:130px;background-color:#f2f2f2}
