@@ -2,6 +2,7 @@
 a{text-decoration: none;}
 li{list-style: none;}
 body{background: #efefef;}
+h2{font-size: 44px; line-height: 1.6; font-weight: 700; margin: 0 0 1em;}
 
 :before,:after{box-sizing: inherit;}
 main{overflow: hidden;}
